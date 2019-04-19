@@ -1,4 +1,4 @@
-// Copyright 2019 - Alexander Batashev
+// Copyright 2019 Alexander Batashev
 
 #include "gtest/gtest.h"
 

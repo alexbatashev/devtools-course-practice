@@ -1,4 +1,4 @@
-// Copyright 2019 - Alexander Batashev
+// Copyright 2019 Alexander Batashev
 
 #include <gtest/gtest.h>
 #include <algorithm>
@@ -7,7 +7,7 @@
 
 TEST(SetTest, Can_Add_Item) {
   // Arrange
-  set<int> mSet;
+  Set<int> mSet;
 
   // Act
   mSet.insert(5);
@@ -18,7 +18,7 @@ TEST(SetTest, Can_Add_Item) {
 
 TEST(SetTest, Added_Items_Are_Unique) {
   // Arrange
-  set<int> mSet;
+  Set<int> mSet;
 
   // Act
   mSet.insert(5);
@@ -32,7 +32,7 @@ TEST(SetTest, Added_Items_Are_Unique) {
 
 TEST(SetTest, Added_Items_Are_Sorted) {
   // Arrange
-  set<int> mSet;
+  Set<int> mSet;
 
   // Act
   mSet.insert(3);
@@ -45,7 +45,7 @@ TEST(SetTest, Added_Items_Are_Sorted) {
 
 TEST(SetTest, Can_Remove_Items) {
   // Arrange
-  set<int> mSet;
+  Set<int> mSet;
 
   mSet.insert(3);
   mSet.insert(2);
@@ -62,8 +62,8 @@ TEST(SetTest, Can_Remove_Items) {
 
 TEST(SetTest, Can_Copy) {
   // Arrange
-  set<int> mSet1;
-  set<int> mSet2;
+  Set<int> mSet1;
+  Set<int> mSet2;
 
   mSet1.insert(5);
 
@@ -74,8 +74,8 @@ TEST(SetTest, Can_Copy) {
 
 TEST(SetTest, Can_Move) {
   // Arrange
-  set<int> mSet1;
-  set<int> mSet2;
+  Set<int> mSet1;
+  Set<int> mSet2;
 
   mSet1.insert(5);
 
